@@ -176,8 +176,9 @@ alter table employee drop column salary;
 alter table employee modify column salary int;
 ```
 
-#### Truncate Table
+#### Truncate Table 
 ```sql
+-- deletes all the rows from table
 truncate employee;
 ```
 
@@ -279,7 +280,9 @@ select * from employee where salary > 3000 and salary < 4000;
 
 #### BETWEEN and AND
 ```sql
+
 select * from employee where salary between 3000 and 4000;
+-- it also includes 3000 & 4000
 ```
 
 ### OR
